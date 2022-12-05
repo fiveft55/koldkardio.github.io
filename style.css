@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --oran: #38c533;
+    --mail: #EA4335;
+    --logo: #34A853;
+}
+
+/* styles here */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-color: #0c0c0c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav-style here */
+nav {
+    /* border: 1px solid coral; */
+    /* height: 10vh; */
+    color: white;
+}
+
+nav ul {
+    /* border: 1px solid green; */
+    display: flex;
+    margin-top: 1rem;
+}
+nav > ul > li {
+    padding: 10px;
+    list-style: none;
+}
+nav > ul li a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: .8;
+    letter-spacing: 1px;
+}
+a.active {
+    color: greenyellow;
+    opacity: 1;
+}
+nav li > a:hover {
+    color: white;
+    opacity: 1;
+}
+
+
+/* Extra */
+div#river {
+    /* border: 1px solid yellow; */
+    overflow: hidden;
+    margin: 0 10px;
+    opacity: .8;
+}
+
+/* main-style here */
+main {
+    /* border: 1px solid yellow; */
+    /* height: inherit; */
+    display: flex;
+    flex-direction: column;
+}
+/* section {
+    border: 1px solid coral;
+} */
+section.image {
+    height: 2vh;
+}
+
+main .container .label {
+    /* border: 1px solid green; */
+    padding: 10px;
+}
+.label > h1 {
+    font-size: 1em;
+    color: var(--oran);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.label .line {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.label > div {
+    /* border: 1px solid yellow; */
+    padding: 10px;
+    font-size: .9em;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.label > div a {
+    text-decoration: none;
+    color: red;
+}
+
+.label h2 {
+    font-size: 1em;
+} 
+.label > div > p {
+    padding: 10px;
+}
+.label:nth-child(5)> div > a:nth-child(1) {
+    color: cornflowerblue;
+}
+.label:nth-child(5)> div > a:nth-child(2) {
+    color: hotpink;
+    padding: 0 10px;
+}
+.label:nth-child(5)> div > a:nth-child(3) {
+    color: lightskyblue;
+    padding-right: 10px;
+}
+.label:nth-child(5)> div > a:nth-child(4) {
+    color: var(--mail);
+}
+
+/* foot-style here */
+footer {
+    height: 5vh;
+}
